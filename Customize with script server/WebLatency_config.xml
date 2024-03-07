@@ -1,0 +1,21 @@
+<monitoredWeb>
+    <dbSetting>
+        <host>localhost</host>
+        <user>ShiXun</user>
+        <pwd>password</pwd>
+        <database>cacti_customize</database>
+        <table>weblatency</table>
+    </dbSetting>
+    <targetList>
+        <target>
+            <url>https://netreg.isu.edu.tw/Wapp/Wap_indexmain2.asp</url>
+            <keyWord>義守大學應用資訊系統圖片</keyWord>
+            <timeoutSetting>240</timeoutSetting>
+        </target>
+        <target>
+            <url>https://google.com</url>
+            <keyWord>google</keyWord>
+            <timeoutSetting>240</timeoutSetting>
+        </target>
+    </targetList>
+</monitoredWeb>

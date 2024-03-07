@@ -1,0 +1,16 @@
+<monitoredMySQL>
+    <dbSetting>
+        <host>localhost</host>
+        <user>ShiXun</user>
+        <pwd>password</pwd>
+        <database>cacti_customize</database>
+        <table>microsoftsql</table>
+    </dbSetting>
+    <targetList>
+        <target>
+            <IP>10.5.5.191</IP>
+            <user>ShiXun</user>
+            <pwd>password</pwd>
+        </target>
+    </targetList>
+</monitoredMySQL>

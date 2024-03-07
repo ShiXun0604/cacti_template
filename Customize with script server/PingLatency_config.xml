@@ -1,0 +1,17 @@
+<monitoredIP>
+    <dbSetting>
+        <host>localhost</host>
+        <user>ShiXun</user>
+        <pwd>password</pwd>
+        <database>cacti_customize</database>
+        <table>pinglatency</table>
+    </dbSetting>
+    <targetList>
+        <target>
+            <IP>google.com</IP>
+        </target>
+        <target>
+            <IP>apple.com</IP>
+        </target>
+    </targetList>
+</monitoredIP>
