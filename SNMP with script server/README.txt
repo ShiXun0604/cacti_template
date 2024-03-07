@@ -1,0 +1,1 @@
+每一個資料夾代表一個data query的程式碼以及template，檔名最長的xml在cacti web GUI內匯入，.php放入script資料夾，剩下的放入<cacti_path>/resources/script_server內。

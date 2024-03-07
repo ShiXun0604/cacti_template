@@ -1,0 +1,48 @@
+<interface>
+	<name>Get idrac power supply data</name>
+	<script_path>|path_cacti|/scripts/ss_idrac_PowerSupply.php</script_path>
+	<script_function>ss_idrac_PowerSupply</script_function>
+ 	<script_server>php</script_server>
+	<arg_prepend>|host_hostname| |host_id| |host_snmp_version|:|host_snmp_port|:|host_snmp_timeout|:|host_ping_retries|:|host_max_oids|:|host_snmp_community|:|host_snmp_username|:|host_snmp_password|:|host_snmp_auth_protocol|:|host_snmp_priv_passphrase|:|host_snmp_priv_protocol|:|host_snmp_context|</arg_prepend>
+	<arg_index>index</arg_index>
+	<arg_query>query</arg_query>
+	<arg_get>get</arg_get>
+	<arg_num_indexes>num_indexes</arg_num_indexes>
+	<output_delimiter>!</output_delimiter>
+	<index_order>Index</index_order>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<Index>
+			<name>Index</name>
+			<direction>input</direction>
+			<query_name>index</query_name>
+		</Index>
+		<Status>
+			<name>Status</name>
+			<direction>input</direction>
+			<query_name>status</query_name>
+		</Status>
+		<Type>
+			<name>Type</name>
+			<direction>input</direction>
+			<query_name>type</query_name>
+		</Type>
+		<MaximumInputVoltage>
+			<name>MaximumInputVoltage</name>
+			<direction>output</direction>
+			<query_name>maximumInputVoltage</query_name>
+		</MaximumInputVoltage>
+		<FQDD>
+			<name>FQDD</name>
+			<direction>input</direction>
+			<query_name>fqdd</query_name>
+		</FQDD>
+		<CurrentInputVoltage>
+			<name>CurrentInputVoltage</name>
+			<direction>output</direction>
+			<query_name>currentInputVoltage</query_name>
+		</CurrentInputVoltage>		
+	</fields>
+</interface>
